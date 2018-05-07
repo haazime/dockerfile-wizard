@@ -4,7 +4,7 @@ image_config: &image_config
   # either as project-specific environment variables
   # or as resources in your organization's org-global Context
 
-  IMAGE_NAME: ruby-node
+  IMAGE_NAME: ruby:2.4.1-node-browsers
 
   IMAGE_TAG: 
 
@@ -54,7 +54,7 @@ jobs:
 
   test_image:
     docker:
-      - image: $DOCKER_USERNAME/ruby-node:
+      - image: $DOCKER_USERNAME/ruby:2.4.1-node-browsers
         environment:
           <<: *image_config
 
