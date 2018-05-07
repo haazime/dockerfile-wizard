@@ -4,9 +4,9 @@ image_config: &image_config
   # either as project-specific environment variables
   # or as resources in your organization's org-global Context
 
-  IMAGE_NAME: ruby:2.4.1-node-browsers
+  IMAGE_NAME: ruby
 
-  IMAGE_TAG: 
+  IMAGE_TAG: 2.4.1-node-browsers
 
   # NOTE: if you're modifying this config.yml file manually
   # rather than using the included setup script,
